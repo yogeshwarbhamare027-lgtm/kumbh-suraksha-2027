@@ -1,0 +1,3227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Kumbh Suraksha 2027</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kumbh Suraksha 2027</title>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#16213e;
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(251, 252, 253, 0.72),
+            rgba(235,243,255,.78)
+        ),
+        url("https://nashikkumbhmela.co.in/wp-content/uploads/2026/03/official-guide-nashik-kumbh-mela-2027.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:-15%;
+    z-index:-5;
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0,140,255,.18),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 80% 35%,
+            rgba(0,210,190,.15),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(255,180,0,.12),
+            transparent 30%
+        );
+
+    animation:
+        backgroundMove 14s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundMove{
+
+    0%{
+        transform:translate3d(-2%,0,0) scale(1);
+    }
+
+    50%{
+        transform:translate3d(2%,-2%,0) scale(1.04);
+    }
+
+    100%{
+        transform:translate3d(-1%,2%,0) scale(1.08);
+    }
+}
+
+
+#cursorGlow{
+    position:fixed;
+
+    width:300px;
+    height:300px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    transform:translate(-50%,-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(30,125,255,.18) 0%,
+            rgba(30,125,255,.08) 35%,
+            transparent 72%
+        );
+
+    filter:Transparent (5px);
+
+    transition:
+        left .12s ease-out,
+        top .12s ease-out;
+}
+
+#particles{
+    position:fixed;
+    inset:0;
+
+    pointer-events:none;
+    z-index:0;
+
+    overflow:hidden;
+}
+
+.particle{
+    position:absolute;
+
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.8);
+
+    box-shadow:
+        0 0 10px rgba(30,130,255,.8);
+
+    animation:
+        particleMove linear infinite;
+}
+
+@keyframes particleMove{
+
+    from{
+        transform:
+            translateY(110vh)
+            translateX(0);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.8;
+    }
+
+    85%{
+        opacity:.8;
+    }
+
+    to{
+        transform:
+            translateY(-20vh)
+            translateX(100px);
+        opacity:0;
+    }
+}
+
+.container{
+    width:min(1450px,94%);
+    margin:auto;
+
+    position:relative;
+    z-index:2;
+}
+
+
+header{
+
+    margin:25px 0 18px;
+
+    padding:20px 25px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.82),
+            rgba(255,255,255,.60)
+        );
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.9);
+
+    box-shadow:
+        0 18px 50px rgba(25,60,100,.16);
+
+    position:relative;
+    overflow:hidden;
+
+    animation:
+        headerIn .8s ease;
+}
+
+header::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    right:-150px;
+    top:-180px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(30,130,255,.16),
+            transparent 70%
+        );
+
+    animation:
+        headerOrb 7s ease-in-out infinite;
+}
+
+@keyframes headerIn{
+
+    from{
+        opacity:0;
+        transform:translateY(-25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes headerOrb{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.35);
+    }
+}
+
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    position:relative;
+    z-index:2;
+}
+
+.header-icon{
+
+    width:78px;
+    height:78px;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+    padding:6px;
+
+    background:
+        rgba(255,255,255,.82);
+
+    border:
+        1px solid rgba(255,255,255,.95);
+
+    box-shadow:
+        0 10px 30px rgba(25,80,150,.20);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.header-icon:hover{
+
+    transform:
+        scale(1.08)
+        rotate(3deg);
+
+    box-shadow:
+        0 15px 40px rgba(25,100,220,.30);
+}
+
+.title{
+
+    font-size:
+        clamp(28px,4vw,48px);
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #16213e,
+            #2166d1,
+            #008fa8
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+}
+
+.subtitle{
+
+    margin-top:7px;
+
+    color:#52617d;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    line-height:1.5;
+}
+
+
+.warning{
+
+    margin:18px 0;
+
+    padding:15px 18px;
+
+    border-left:
+        5px solid #ff9800;
+
+    border-radius:14px;
+
+    background:
+        rgba(255,249,233,.86);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:
+        0 10px 30px rgba(100,70,20,.08);
+
+    animation:
+        fadeUp .8s ease;
+}
+
+.warning strong{
+    color:#d47700;
+}
+
+.warning span{
+    color:#5d687a;
+    font-size:13px;
+}
+
+.top-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+
+    margin:20px 0;
+}
+
+.card{
+
+    position:relative;
+
+    padding:22px;
+
+    min-height:145px;
+
+    border-radius:20px;
+
+    background:
+        rgba(247, 248, 249, 0.874);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:
+        1px solid rgba(252, 249, 249, 0.9);
+
+    box-shadow:
+        0 12px 35px rgba(30,70,120,.13);
+
+    overflow:hidden;
+
+    transition:
+        transform .25s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+    height:170px;
+
+    right:-80px;
+    top:-90px;
+
+    border-radius:50%;
+
+    background:
+        rgba(40,130,255,.09);
+
+    transition:.4s ease;
+}
+
+.card:hover{
+
+    box-shadow:
+        0 22px 48px rgba(25,75,145,.20);
+
+    background:
+        rgba(255,255,255,.82);
+}
+
+.card:hover::before{
+    transform:scale(1.45);
+}
+
+.card-label{
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.7px;
+
+    color:#68758c;
+
+    font-weight:800;
+}
+
+.card-value{
+
+    margin-top:8px;
+
+    font-size:32px;
+
+    font-weight:900;
+
+    color:#17213b;
+}
+
+.card-small{
+
+    margin-top:6px;
+
+    font-size:13px;
+
+    color:#68758c;
+}
+
+.section{
+
+    margin:20px 0;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    background:
+        rgba(255,255,255,.68);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:
+        1px solid rgba(255,255,255,.88);
+
+    box-shadow:
+        0 14px 40px rgba(30,70,120,.12);
+
+    animation:
+        fadeUp .8s ease both;
+}
+
+.section-title{
+
+    font-size:22px;
+
+    font-weight:900;
+
+    color:#16213e;
+
+    margin-bottom:8px;
+}
+
+.section-subtitle{
+
+    color:#718096;
+
+    font-size:13px;
+
+    margin-bottom:20px;
+}
+
+.controls{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:18px;
+}
+
+.control-box{
+
+    padding:17px;
+
+    border-radius:16px;
+
+    background:
+        rgba(246,249,254,.76);
+
+    border:
+        1px solid rgba(220,230,245,.9);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.control-box:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(30,80,140,.10);
+}
+
+.control-box label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    color:#52617d;
+}
+
+select{
+
+    width:100%;
+
+    padding:12px 14px;
+
+    border-radius:11px;
+
+    border:
+        1px solid #d7dfeb;
+
+    background:#fff;
+
+    color:#1d2942;
+
+    font-size:14px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+select:focus{
+
+    border-color:#347be5;
+
+    box-shadow:
+        0 0 0 4px rgba(52,123,229,.10);
+}
+
+
+.risk-layout{
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(300px, 0.82fr) minmax(0, 2fr);
+
+    gap:28px;
+
+    margin-top:25px;
+
+    align-items:stretch;
+}
+
+.gauge-card{
+    width:100%;
+    max-width:none;
+    margin:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+        rgba(247,250,255,.70);
+
+    border:
+        1px solid rgba(220,230,245,.85);
+}
+
+.gauge{
+
+    width:280px;
+    height:280px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+
+    background:
+        conic-gradient(
+            from -90deg,
+            #4caf50 0deg,
+            #ffc107 90deg,
+            #ff9800 180deg,
+            #f44336 270deg,
+            #e8edf5 270deg 360deg
+        );
+
+    box-shadow:
+        0 15px 40px rgba(30,80,140,.17);
+
+    transition:
+        background .7s ease;
+}
+
+.gauge::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:18px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.94);
+}
+
+.gauge-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+}
+
+.gauge-value{
+
+    font-size:40px;
+
+    font-weight:900;
+
+    color:#17213b;
+}
+
+.gauge-label{
+
+    font-size:13px;
+
+    font-weight:800;
+
+    color:#69768d;
+}
+
+.risk-status{
+
+    margin-top:18px;
+
+    padding:9px 18px;
+
+    border-radius:30px;
+
+    background:#fff3e0;
+
+    color:#e67e00;
+
+    font-size:13px;
+
+    font-weight:900;
+
+    transition:.3s ease;
+}
+
+
+.disease-grid{
+
+    display:grid;
+
+    gap:18px;
+}
+
+.disease-box{
+
+    padding:17px;
+
+    border-radius:16px;
+
+    background:
+        rgba(248,250,254,.68);
+
+    border:
+        1px solid rgba(220,230,245,.85);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.disease-box:hover{
+
+    transform:
+        translateX(5px);
+
+    box-shadow:
+        0 12px 28px rgba(30,80,140,.10);
+}
+
+.disease-head{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:9px;
+
+    font-size:14px;
+
+    font-weight:800;
+}
+
+.bar-track{
+
+    height:12px;
+
+    border-radius:20px;
+
+    background:#e7edf5;
+
+    overflow:hidden;
+}
+
+.bar-fill{
+
+    height:100%;
+
+    width:0;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3478e5,
+            #16a3bd
+        );
+
+    transition:
+        width 1.2s cubic-bezier(.2,.8,.2,1);
+}
+
+
+
+.table-wrap{
+    overflow-x:auto;
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:700px;
+}
+
+th{
+
+    padding:14px;
+
+    text-align:left;
+
+    background:
+        rgba(235,241,250,.88);
+
+    color:#52617d;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+}
+
+td{
+
+    padding:14px;
+
+    border-bottom:
+        1px solid rgba(220,228,240,.7);
+
+    font-size:14px;
+}
+
+tbody tr{
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+}
+
+tbody tr:hover{
+
+    background:
+        rgba(225,237,255,.55);
+
+    transform:
+        scale(1.005);
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    font-size:11px;
+
+    font-weight:900;
+}
+
+.very-high{
+
+    background:#ffe0e0;
+    color:#d62828;
+}
+
+.high{
+
+    background:#fff0d5;
+    color:#d97706;
+}
+
+.moderate{
+
+    background:#fff7c7;
+    color:#9a7a00;
+}
+
+.low{
+
+    background:#dcf8e3;
+    color:#25803b;
+}
+
+
+.parameters{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:14px;
+}
+
+.parameter{
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:
+        rgba(247,250,254,.72);
+
+    border:
+        1px solid rgba(225,231,241,.85);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.parameter:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 12px 28px rgba(30,80,140,.10);
+}
+
+.parameter-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+}
+
+.parameter-name{
+
+    font-size:14px;
+
+    font-weight:800;
+}
+
+.parameter-value{
+
+    color:#2871d7;
+
+    font-weight:900;
+}
+
+.parameter-bar{
+
+    height:8px;
+
+    margin-top:10px;
+
+    border-radius:20px;
+
+    background:#e7ecf4;
+
+    overflow:hidden;
+}
+
+.parameter-fill{
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3378e4,
+            #13a3bf
+        );
+}
+
+.matrix-wrap{
+    overflow:auto;
+}
+
+.matrix{
+
+    min-width:850px;
+}
+
+.matrix td,
+.matrix th{
+
+    text-align:center;
+
+    padding:11px;
+}
+
+.matrix td:first-child,
+.matrix th:first-child{
+
+    text-align:left;
+
+    font-weight:800;
+}
+
+
+.matrix-value{
+
+    display:inline-block;
+
+    min-width:48px;
+
+    padding:6px 5px;
+
+    border-radius:8px;
+
+    font-size:11px;
+
+    font-weight:800;
+}
+
+.sim-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:14px;
+}
+
+.sim-row{
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:
+        rgba(247,250,254,.72);
+
+    border:
+        1px solid rgba(220,228,240,.85);
+}
+
+.sim-row label{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    font-size:13px;
+
+    font-weight:800;
+}
+
+input[type="range"]{
+
+    width:100%;
+
+    accent-color:#3278e5;
+
+    cursor:pointer;
+}
+
+.sim-button{
+
+    margin-top:18px;
+
+    padding:13px 22px;
+
+    border:0;
+
+    border-radius:12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #236bd0,
+            #2198bd
+        );
+
+    color:#fff;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 25px rgba(35,110,210,.22);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.sim-button:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 32px rgba(35,110,210,.30);
+}
+
+.sim-button:active{
+
+    transform:
+        scale(.97);
+}
+
+.sim-result{
+
+    display:none;
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border-radius:13px;
+
+    background:
+        rgba(230,241,255,.80);
+
+    color:#24558d;
+
+    font-weight:800;
+}
+
+.actions{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:15px;
+}
+
+.action{
+
+    padding:17px;
+
+    border-radius:15px;
+
+    background:
+        rgba(247,250,255,.72);
+
+    border:
+        1px solid rgba(220,230,245,.85);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.action:hover{
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 12px 28px rgba(30,70,130,.11);
+}
+
+.action-title{
+
+    margin-bottom:6px;
+
+    color:#1f3f73;
+
+    font-weight:900;
+}
+
+.action-text{
+
+    color:#66748a;
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+.formula{
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    border-radius:17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(230,240,255,.86),
+            rgba(240,249,255,.76)
+        );
+
+    border:
+        1px solid rgba(190,215,245,.8);
+
+    color:#1c4e8c;
+
+    text-align:center;
+
+    font-size:20px;
+
+    font-weight:900;
+}
+
+.threshold-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:12px;
+}
+
+.threshold{
+
+    padding:14px;
+
+    border-radius:13px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    font-weight:800;
+}
+
+.t-low{
+
+    background:#dcf8e3;
+    color:#25803b;
+}
+
+.t-mod{
+
+    background:#fff7c7;
+    color:#9a7a00;
+}
+
+.t-high{
+
+    background:#fff0d5;
+    color:#d97706;
+}
+
+.t-vhigh{
+
+    background:#ffe0e0;
+    color:#d62828;
+}
+
+
+footer{
+
+    margin:25px 0 35px;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:
+        rgba(255,255,255,.65);
+
+    backdrop-filter:blur(15px);
+
+    border:
+        1px solid rgba(255,255,255,.85);
+
+    color:#69768d;
+
+    font-size:12px;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:1100px){
+
+    .top-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .risk-layout{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .container{
+        width:94%;
+    }
+
+    header{
+        padding:18px;
+    }
+
+    .brand{
+        gap:11px;
+    }
+
+    .header-icon{
+        width:58px;
+        height:58px;
+    }
+
+    .title{
+        font-size:25px;
+    }
+
+    .subtitle{
+        font-size:12px;
+    }
+
+    .top-grid{
+        grid-template-columns:1fr;
+    }
+
+    .controls{
+        grid-template-columns:1fr;
+    }
+
+    .parameters{
+        grid-template-columns:1fr;
+    }
+
+    .sim-grid{
+        grid-template-columns:1fr;
+    }
+
+    .actions{
+        grid-template-columns:1fr;
+    }
+
+    .threshold-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .gauge{
+        width:200px;
+        height:200px;
+    }
+}
+
+
+.flag-event{
+    margin:18px 0 20px;
+    padding:16px 20px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    background:linear-gradient(135deg,rgba(255,255,255,.82),rgba(238,246,255,.72));
+    border:1px solid rgba(255,255,255,.92);
+    box-shadow:0 12px 32px rgba(30,70,120,.12);
+    backdrop-filter:blur(16px);
+    animation:fadeUp .8s ease;
+}
+
+.flag-event-left{
+    display:flex;
+    align-items:center;
+    gap:13px;
+}
+
+.flag-event-icon{
+    width:46px;
+    height:46px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#236bd0,#2198bd);
+    color:#fff;
+    font-size:22px;
+    box-shadow:0 8px 20px rgba(35,110,210,.22);
+}
+
+.flag-event-title{
+    font-size:13px;
+    font-weight:900;
+    color:#52617d;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+}
+
+.flag-event-date{
+    margin-top:3px;
+    font-size:19px;
+    font-weight:900;
+    color:#17213b;
+}
+
+.flag-event-badge{
+    padding:8px 13px;
+    border-radius:20px;
+    background:#e9f3ff;
+    color:#236bd0;
+    font-size:11px;
+    font-weight:900;
+    white-space:nowrap;
+}
+
+.map-panel{
+    margin-bottom:20px;
+    padding:18px;
+    border-radius:20px;
+    background:rgba(247,250,255,.72);
+    border:1px solid rgba(220,230,245,.85);
+    box-shadow:0 12px 32px rgba(30,70,120,.10);
+}
+
+.map-panel-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:14px;
+    margin-bottom:12px;
+}
+
+.map-title{
+    font-size:18px;
+    font-weight:900;
+    color:#16213e;
+}
+
+.map-subtitle{
+    margin-top:4px;
+    color:#718096;
+    font-size:12px;
+    line-height:1.5;
+}
+
+.map-live{
+    padding:7px 10px;
+    border-radius:18px;
+    background:#e7f8ee;
+    color:#27834a;
+    font-size:10px;
+    font-weight:900;
+    white-space:nowrap;
+}
+
+#zoneMap{
+    width:100%;
+    height:390px;
+    border-radius:16px;
+    overflow:hidden;
+    border:1px solid rgba(205,219,238,.9);
+    box-shadow:0 10px 25px rgba(30,70,120,.10);
+}
+
+.map-note{
+    margin-top:9px;
+    font-size:10px;
+    color:#7a8799;
+    line-height:1.5;
+}
+
+.zone-marker{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#236bd0,#2198bd);
+    color:#fff;
+    font-size:11px;
+    font-weight:900;
+    border:3px solid rgba(255,255,255,.96);
+    box-shadow:0 5px 16px rgba(35,110,210,.34);
+    transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.zone-marker.active{
+    transform:scale(1.35);
+    box-shadow:0 0 0 8px rgba(35,110,210,.18),0 8px 24px rgba(35,110,210,.42);
+}
+
+.leaflet-popup-content-wrapper{
+    border-radius:12px;
+}
+
+.zone-popup-title{
+    font-weight:900;
+    color:#16213e;
+}
+
+.zone-popup-text{
+    margin-top:3px;
+    font-size:11px;
+    color:#69768d;
+}
+
+.zone-legend{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+    margin-top:11px;
+}
+
+.zone-legend-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 10px;
+    border-radius:10px;
+    background:rgba(255,255,255,.68);
+    border:1px solid rgba(220,230,245,.8);
+    cursor:pointer;
+    transition:.2s ease;
+}
+
+.zone-legend-item:hover,
+.zone-legend-item.active{
+    background:#edf5ff;
+    border-color:#b8d4fa;
+    transform:translateY(-1px);
+}
+
+.zone-legend-dot{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:0 0 24px;
+    background:#236bd0;
+    color:#fff;
+    font-size:9px;
+    font-weight:900;
+}
+
+.zone-legend-name{
+    min-width:0;
+    font-size:11px;
+    font-weight:800;
+    color:#34425e;
+    line-height:1.25;
+}
+
+@media(max-width:700px){
+    .flag-event{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .flag-event-badge{
+        margin-left:59px;
+    }
+
+    #zoneMap{
+        height:320px;
+    }
+
+    .zone-legend{
+        grid-template-columns:1fr;
+    }
+}
+
+.contribution-input{
+    width:70px;
+    padding:6px 7px;
+    border:1px solid #c8d7ea;
+    border-radius:8px;
+    text-align:right;
+    font-weight:800;
+    color:#24507d;
+    background:#fff;
+}
+.matrix-value{display:inline-block;min-width:44px;text-align:center;padding:6px 8px;border-radius:7px;}
+</style>
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="cursorGlow"></div>
+<div id="particles"></div>
+<div class="container">
+<header>
+<div class="brand">
+<img alt="Kumbh Suraksha 2027 Icon" class="header-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRrn3oeCdn0PGNfkekcR0yz3U2yODqyESvPEhbyo1egKCos_K_XPtCzSg&amp;s=10"/>
+<div>
+<div class="title">
+                KUMBH SURAKSHA 2027
+            </div>
+<div class="subtitle">
+                Fuzzy Soft Set Based Infectious-Disease Risk Assessment &amp; Early-Warning System
+            </div>
+</div>
+</div>
+</header>
+<div class="warning">
+<strong>
+        ⚠ ILLUSTRATIVE DEMO DATA
+    </strong>
+<span>
+        — Synthetic demonstration values are used for this research prototype.
+        This dashboard is not real-time public-health data and must not be used
+        for operational medical or public-health decisions without validation.
+    </span>
+</div>
+<div class="flag-event">
+<div class="flag-event-left">
+<div class="flag-event-icon">🚩</div>
+<div>
+<div class="flag-event-title">Project Event</div>
+<div class="flag-event-date">31 October 2026 — Flag Hosting</div>
+</div>
+</div>
+<div class="flag-event-badge">UPCOMING MILESTONE</div>
+</div>
+<div class="top-grid">
+<div class="card">
+<div class="card-label">
+            Overall FERI
+        </div>
+<div class="card-value" id="overallFERI">
+            Calculating...
+        </div>
+<div class="card-small" id="overallRisk">
+            Calculating...
+        </div>
+</div>
+<div class="card">
+<div class="card-label">
+            Highest Risk Zone
+        </div>
+<div class="card-value" id="highestZone">
+            —
+        </div>
+<div class="card-small" id="highestZoneValue">
+            —
+        </div>
+</div>
+<div class="card">
+<div class="card-label">
+            High Risk Zones
+        </div>
+<div class="card-value" id="highZones">
+            0
+        </div>
+<div class="card-small">
+            Based on proposed threshold
+        </div>
+</div>
+<div class="card">
+<div class="card-label">
+            Dominant Risk
+        </div>
+<div class="card-value" id="dominantRisk">
+            —
+        </div>
+<div class="card-small">
+            Disease-risk category
+        </div>
+</div>
+</div>
+<section class="section">
+<div class="section-title">
+        Interactive Risk Assessment
+    </div>
+<div class="section-subtitle">
+        Select study zone and assessment event to calculate the proposed FERI.
+    </div>
+<div class="controls">
+<div class="control-box">
+<label>
+                Study Zone
+            </label>
+<select id="zoneSelect">
+<option value="0">
+                    Z1 — Ramkund
+                </option>
+<option value="1">
+                    Z2 — Godavari Riverfront
+                </option>
+<option value="2">
+                    Z3 — Panchavati
+                </option>
+<option value="3">
+                    Z4 — Main Pilgrim Route
+                </option>
+<option value="4">
+                    Z5 — Accommodation / Camp Area
+                </option>
+<option value="5">
+                    Z6 — Food / Market Area
+                </option>
+<option value="6">
+                    Z7 — Transport Hub
+                </option>
+<option value="7">
+                    Z8 — Healthcare Zone
+                </option>
+</select>
+</div>
+<div class="control-box">
+<label>
+                Assessment Event
+            </label>
+<select id="eventSelect">
+<option>
+                    31 Oct 2026 — Flag Hosting
+                </option>
+<option>
+                    2 Aug 2027 — First Shahi Snan
+                </option>
+<option>
+                    31 Aug 2027 — Peak Shahi Snan
+                </option>
+<option>
+                    11 Sep 2027 — Nashik Closing
+                </option>
+<option>
+                    12 Sep 2027 — Trimbakeshwar Closing
+                </option>
+</select>
+</div>
+</div>
+<div class="risk-layout">
+<div class="gauge-card">
+<div class="gauge" id="gauge">
+<div class="gauge-content">
+<div class="gauge-value" id="feriValue">
+                        0.00
+                    </div>
+<div class="gauge-label">
+                        FERI
+                    </div>
+</div>
+</div>
+<div class="risk-status" id="riskStatus">
+                Calculating...
+            </div>
+</div>
+<div>
+
+<div class="section-title" style="font-size:18px;">
+                Disease-Risk Categories
+            </div>
+<div class="disease-grid">
+<div class="disease-box">
+<div class="disease-head">
+<span>
+                            Water / Food
+                        </span>
+<span id="waterValue">
+                            0%
+                        </span>
+</div>
+<div class="bar-track">
+<div class="bar-fill" id="waterBar"></div>
+</div>
+</div>
+<div class="disease-box">
+<div class="disease-head">
+<span>
+                            Respiratory
+                        </span>
+<span id="respValue">
+                            0%
+                        </span>
+</div>
+<div class="bar-track">
+<div class="bar-fill" id="respBar"></div>
+</div>
+</div>
+<div class="disease-box">
+<div class="disease-head">
+<span>
+                            Vector / Environment
+                        </span>
+<span id="vectorValue">
+                            0%
+                        </span>
+</div>
+<div class="bar-track">
+<div class="bar-fill" id="vectorBar"></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="map-panel">
+<div class="map-panel-head">
+<div>
+<div class="map-title">
+                            🗺️ Interactive Kumbh Study-Zone Map
+                        </div>
+<div class="map-subtitle">
+                            All 8 study zones are highlighted. Click any marker or zone name
+                            to move the map to that location and update the selected zone.
+                        </div>
+</div>
+<div class="map-live">
+                        8 ZONES
+                    </div>
+</div>
+<div id="zoneMap"></div>
+<div class="zone-legend" id="zoneLegend"></div>
+<div class="map-note">
+                    Representative planning points are used for this research prototype;
+                    they are not surveyed zone boundaries or operational navigation points.
+                </div>
+</div>
+</section>
+<section class="section">
+<div class="section-title">
+        Zone Risk Ranking
+    </div>
+<div class="section-subtitle">
+        Comparative FERI assessment across study zones.
+    </div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>
+                        Rank
+                    </th>
+<th>
+                        Zone
+                    </th>
+<th>
+                        Multiplier
+                    </th>
+<th>
+                        FERI
+                    </th>
+<th>
+                        Risk Level
+                    </th>
+</tr>
+</thead>
+<tbody id="zoneTable"></tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<div class="section-title">
+        Top Contributing Parameters
+    </div>
+<div class="parameters" id="parameters"></div>
+</section>
+<section class="section">
+<div class="section-title">
+        Fuzzy Soft Set Matrix
+    </div>
+<div class="section-subtitle">
+        Membership values used by the illustrative research model.
+    </div>
+<div class="matrix-wrap">
+<table class="matrix">
+<thead>
+<tr>
+<th>
+                        Parameter
+                    </th>
+<th>Z1</th>
+<th>Z2</th>
+<th>Z3</th>
+<th>Z4</th>
+<th>Z5</th>
+<th>Z6</th>
+<th>Z7</th>
+<th>Z8</th>
+</tr>
+</thead>
+<tbody id="matrixBody"></tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<div class="section-title">
+        What-If Simulation
+    </div>
+<div class="section-subtitle">
+        Adjust selected parameters to observe the illustrative FERI response.
+    </div>
+<div class="sim-grid">
+<div class="sim-row">
+<label>
+<span>
+                    Crowd Density
+                </span>
+<span id="simE1Val">
+                    80%
+                </span>
+</label>
+<input id="simE1" max="100" min="0" type="range" value="80"/>
+</div>
+<div class="sim-row">
+<label>
+<span>
+                    Water Quality Risk
+                </span>
+<span id="simE4Val">
+                    70%
+                </span>
+</label>
+<input id="simE4" max="100" min="0" type="range" value="70"/>
+</div>
+<div class="sim-row">
+<label>
+<span>
+                    Sanitation Risk
+                </span>
+<span id="simE5Val">
+                    75%
+                </span>
+</label>
+<input id="simE5" max="100" min="0" type="range" value="75"/>
+</div>
+<div class="sim-row">
+<label>
+<span>
+                    Waste Accumulation
+                </span>
+<span id="simE6Val">
+                    58%
+                </span>
+</label>
+<input id="simE6" max="100" min="0" type="range" value="58"/>
+</div>
+<div class="sim-row">
+<label>
+<span>
+                    Syndromic Illness Rate
+                </span>
+<span id="simE9Val">
+                    78%
+                </span>
+</label>
+<input id="simE9" max="100" min="0" type="range" value="78"/>
+</div>
+<div class="sim-row">
+<label>
+<span>
+                    Disease Trend
+                </span>
+<span id="simE10Val">
+                    64%
+                </span>
+</label>
+<input id="simE10" max="100" min="0" type="range" value="64"/>
+</div>
+</div>
+<button class="sim-button" onclick="runSimulation()">
+        Run What-If Simulation
+    </button>
+<div class="sim-result" id="simResult"></div>
+</section>
+<section class="section">
+<div class="section-title">
+        Recommended Preventive Actions
+    </div>
+<div class="actions">
+<div class="action">
+<div class="action-title">
+                💧 Water &amp; Food Safety
+            </div>
+<div class="action-text">
+                Increase water-quality surveillance, drinking-water
+                sampling and food-hygiene inspection in high-risk zones.
+            </div>
+</div>
+<div class="action">
+<div class="action-title">
+                🧹 Sanitation Management
+            </div>
+<div class="action-text">
+                Increase waste collection frequency, sanitation
+                monitoring and rapid-response cleaning operations.
+            </div>
+</div>
+<div class="action">
+<div class="action-title">
+                👥 Crowd Management
+            </div>
+<div class="action-text">
+                Monitor crowd density, queue duration and crowd-growth
+                trends around major pilgrimage routes.
+            </div>
+</div>
+<div class="action">
+<div class="action-title">
+                🏥 Health Surveillance
+            </div>
+<div class="action-text">
+                Track syndromic illness indicators and healthcare load
+                to support early-warning decision making.
+            </div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-title">
+        Mathematical Model
+    </div>
+<div class="formula">
+<strong>FERI(Zj) = Σ wi × μij</strong>
+<br/><br/>
+<strong>Contributionij (%) = (wi × μij / Σk(wk × μkj)) × 100</strong>
+<br/><br/>
+<strong>μij</strong> is automatically derived from the contribution percentage
+        and scaled to the range 0–1.
+    </div>
+<p style="line-height:1.8;color:#65738a;font-size:14px;">
+<strong>Mathematical Model Explanation</strong>
+<br/><br/>
+
+        The <strong>FERI (Fuzzy Environmental Risk Index)</strong> represents the
+        overall environmental and public-health risk level for a particular zone.
+        It is calculated by multiplying the weight of each parameter by its
+        fuzzy membership value and then summing the results.
+        <br/><br/>
+<strong>wi</strong> = weight assigned to parameter i.
+        The weight represents the relative importance of that parameter in the
+        overall risk calculation.
+        <br/><br/>
+<strong>μij</strong> = fuzzy membership value of parameter i for zone j.
+        This value represents the degree to which that parameter contributes to
+        the risk in the selected zone and remains between 0 and 1.
+        <br/><br/>
+<strong>FERI(Zj)</strong> = the total FERI score of zone j, obtained by
+        summing all weighted fuzzy membership values
+        (<strong>wi × μij</strong>) for the parameters included in the model.
+        <br/><br/>
+<strong>Contributionij (%)</strong> shows how much parameter i contributes
+        to the total FERI score of zone j. It is calculated by dividing the
+        weighted contribution of that parameter by the sum of all weighted
+        parameter contributions for the same zone and multiplying the result by
+        100.
+        <br/><br/>
+
+        The contribution percentage is then used to automatically derive the
+        corresponding <strong>fuzzy membership value μij</strong>, which is scaled
+        to a value between <strong>0 and 1</strong>. Therefore, higher membership
+        values indicate greater risk contribution from that parameter.
+        <br/><br/>
+
+        In this model, the final FERI value is interpreted using the following
+        proposed risk thresholds: <strong>0.00–0.25 = Low</strong>,
+        <strong>0.25–0.50 = Moderate</strong>,
+        <strong>0.50–0.75 = High</strong>, and
+        <strong>0.75–1.00 = Very High</strong>.
+        These thresholds are proposed research-model thresholds and require
+        validation before operational public-health use.
+
+    </p>
+<br/>
+<div class="threshold-grid">
+<div class="threshold t-low">
+            0.00 – 0.25
+            <br/>
+            Low
+        </div>
+<div class="threshold t-mod">
+            0.25 – 0.50
+            <br/>
+            Moderate
+        </div>
+<div class="threshold t-high">
+            0.50 – 0.75
+            <br/>
+            High
+        </div>
+<div class="threshold t-vhigh">
+            0.75 – 1.00
+            <br/>
+            Very High
+        </div>
+</div>
+<br/>
+<p style="
+        color:#6b7890;
+        font-size:13px;
+        line-height:1.7;
+    ">
+
+        Note: These thresholds are proposed research-model thresholds
+        and require validation before operational public-health use.
+
+    </p>
+</section>
+<footer>
+
+    Kumbh Suraksha 2027 • Avishkar Research Prototype •
+    Fuzzy Soft Set • Environmental Risk • Syndromic Surveillance •
+    Early Warning
+
+</footer>
+</div>
+<script>
+
+
+const parameters = [
+
+    {
+        id:"E1",
+        name:"Crowd Density",
+        unit:"persons/m²",
+        weight:.12,
+        base:.80
+    },
+
+    {
+        id:"E2",
+        name:"Crowd Growth Rate",
+        unit:"%",
+        weight:.06,
+        base:.62
+    },
+
+    {
+        id:"E3",
+        name:"Queue / Waiting Time",
+        unit:"minutes",
+        weight:.04,
+        base:.45
+    },
+
+    {
+        id:"E4",
+        name:"Water Quality Risk",
+        unit:"index",
+        weight:.14,
+        base:.70
+    },
+
+    {
+        id:"E5",
+        name:"Sanitation Risk",
+        unit:"index",
+        weight:.12,
+        base:.75
+    },
+
+    {
+        id:"E6",
+        name:"Waste Accumulation",
+        unit:"index",
+        weight:.06,
+        base:.58
+    },
+
+    {
+        id:"E7",
+        name:"Food Hygiene Risk",
+        unit:"index",
+        weight:.06,
+        base:.48
+    },
+
+    {
+        id:"E8",
+        name:"Environmental / Weather Stress",
+        unit:"index",
+        weight:.05,
+        base:.55
+    },
+
+    {
+        id:"E9",
+        name:"Syndromic Illness Rate",
+        unit:"per 1,000",
+        weight:.15,
+        base:.78
+    },
+
+    {
+        id:"E10",
+        name:"Disease Trend",
+        unit:"index",
+        weight:.08,
+        base:.64
+    },
+
+    {
+        id:"E11",
+        name:"Healthcare Load",
+        unit:"%",
+        weight:.06,
+        base:.52
+    },
+
+    {
+        id:"E12",
+        name:"Emergency Response Accessibility",
+        unit:"risk index",
+        weight:.06,
+        base:.35
+    }
+
+];
+
+const zones = [
+
+    {
+        name:"Z1 Ramkund",
+        multiplier:1.06
+    },
+
+    {
+        name:"Z2 Godavari Riverfront",
+        multiplier:1.02
+    },
+
+    {
+        name:"Z3 Panchavati",
+        multiplier:.88
+    },
+
+    {
+        name:"Z4 Main Pilgrim Route",
+        multiplier:1.08
+    },
+
+    {
+        name:"Z5 Accommodation / Camp Area",
+        multiplier:.91
+    },
+
+    {
+        name:"Z6 Food / Market Area",
+        multiplier:.96
+    },
+
+    {
+        name:"Z7 Transport Hub",
+        multiplier:.83
+    },
+
+    {
+        name:"Z8 Healthcare Zone",
+        multiplier:.72
+    }
+
+];
+
+function clamp(value){
+
+    return Math.max(
+        0,
+        Math.min(1,value)
+    );
+
+}
+
+function getRisk(score){
+
+    if(score >= .75)
+        return "Very High";
+
+    if(score >= .50)
+        return "High";
+
+    if(score >= .25)
+        return "Moderate";
+
+    return "Low";
+}
+
+
+function riskClass(score){
+
+    const risk = getRisk(score);
+
+    if(risk === "Very High")
+        return "very-high";
+
+    if(risk === "High")
+        return "high";
+
+    if(risk === "Moderate")
+        return "moderate";
+
+    return "low";
+}
+
+
+
+const contributionOverrides = zones.map(()=>null);
+
+
+const zoneParameterFactors = [
+    [1.08,.96,1.04,1.10,1.02,.94,1.05,1.00,1.07,.96,1.03,.92],
+    [.98,1.08,1.04,.96,1.10,1.02,.94,1.06,.98,1.08,.96,1.04],
+    [1.04,.94,1.10,1.02,.96,1.08,1.12,.92,1.04,.94,1.08,.98],
+    [1.12,1.04,.96,1.08,1.12,.94,1.02,1.10,1.08,1.02,.94,1.06],
+    [.94,1.10,1.04,.98,1.06,1.12,.96,1.04,.92,1.08,1.02,.94],
+    [1.02,.96,1.12,1.10,1.04,.98,1.08,.94,1.12,.96,1.04,1.00],
+    [.92,1.06,1.10,.94,.98,1.08,1.12,1.02,.96,1.10,1.04,.92],
+    [.88,.94,1.06,.90,.96,1.04,.92,1.08,.90,1.02,1.10,1.06]
+];
+
+function rawData(zoneIndex){
+    const zone = zones[zoneIndex];
+    const factors = zoneParameterFactors[zoneIndex] || [];
+
+    return parameters.map((parameter,index)=>{
+        const factor = factors[index] || 1;
+        return clamp(parameter.base * zone.multiplier * factor);
+    });
+}
+
+function getBaseContributionPercentages(zoneIndex){
+    const raw = rawData(zoneIndex);
+    const weighted = parameters.map((parameter,index)=>parameter.weight * raw[index]);
+    const total = weighted.reduce((sum,value)=>sum+value,0);
+    if(total<=0) return parameters.map(()=>0);
+    return weighted.map(value=>value/total*100);
+}
+
+function getContributionPercentages(zoneIndex){
+    const override = contributionOverrides[zoneIndex];
+    return override ? override.slice() : getBaseContributionPercentages(zoneIndex);
+}
+
+function normalizePercentages(values){
+    const clean = values.map(v=>Math.max(0,Number(v)||0));
+    const total = clean.reduce((a,b)=>a+b,0);
+    if(total<=0) return parameters.map(()=>100/parameters.length);
+    return clean.map(v=>v/total*100);
+}
+
+function contributionScale(zoneIndex){
+    
+    const raw = rawData(zoneIndex);
+    return parameters.reduce(
+        (sum,parameter,index)=>sum + parameter.weight * raw[index],
+        0
+    );
+}
+
+function contributionPercentagesToMembership(percentages, zoneIndex){
+    const scale = contributionScale(zoneIndex);
+
+    return parameters.map((parameter,index)=>{
+        if(parameter.weight<=0) return 0;
+
+        const membership =
+            (Math.max(0,Number(percentages[index]) || 0) / 100) *
+            scale / parameter.weight;
+
+        return clamp(membership);
+    });
+}
+
+function getData(zoneIndex){
+    return contributionPercentagesToMembership(
+        getContributionPercentages(zoneIndex),
+        zoneIndex
+    );
+}
+
+function setContributionFromTopParameter(parameterId, value){
+    const zoneIndex = Number(document.getElementById("zoneSelect").value);
+    const parameterIndex = parameters.findIndex(p=>p.id===parameterId);
+    if(parameterIndex<0) return;
+
+    const current = getContributionPercentages(zoneIndex);
+    const desired = Math.max(0,Number(value)||0);
+    const next = current.slice();
+    const remaining = Math.max(0,100-desired);
+    const otherTotal = current.reduce((sum,v,i)=>i===parameterIndex?sum:sum+v,0);
+
+    next[parameterIndex] = desired;
+    if(otherTotal>0){
+        for(let i=0;i<next.length;i++){
+            if(i!==parameterIndex)
+                next[i] = current[i]/otherTotal*remaining;
+        }
+    }else{
+        const each = remaining/(next.length-1);
+        for(let i=0;i<next.length;i++) if(i!==parameterIndex) next[i]=each;
+    }
+
+    contributionOverrides[zoneIndex] = normalizePercentages(next);
+    update();
+}
+
+function resetAutomaticContributions(){
+    contributionOverrides.forEach((_,i)=>contributionOverrides[i]=null);
+    update();
+}
+
+function contributionPercentFromMembership(weight,membership,zoneIndex,parameterIndex){
+    return getContributionPercentages(zoneIndex)[parameterIndex];
+}
+
+function calculateFERI(data){
+
+    let total = 0;
+
+    parameters.forEach(
+        (parameter,index)=>{
+
+            total +=
+                parameter.weight *
+                data[index];
+
+        }
+    );
+
+    return clamp(total);
+}
+
+function calculateDiseaseRisk(data){
+
+    const water =
+        .40 * data[3] +
+        .30 * data[4] +
+        .15 * data[5] +
+        .15 * data[6];
+
+    const respiratory =
+        .45 * data[0] +
+        .20 * data[1] +
+        .15 * data[7] +
+        .20 * data[8];
+
+    const vector =
+        .35 * data[7] +
+        .25 * data[5] +
+        .20 * data[8] +
+        .20 * data[9];
+
+    return {
+        water:clamp(water),
+        respiratory:clamp(respiratory),
+        vector:clamp(vector)
+    };
+}
+
+function setFeriGauge(value){
+
+    const feri = clamp(Number(value) || 0);
+    const gauge = document.getElementById("gauge");
+    const feriValue = document.getElementById("feriValue");
+    const riskStatus = document.getElementById("riskStatus");
+
+    if(!gauge) return;
+
+    const end = feri * 360;
+    const first = Math.min(end,90);
+    const second = Math.min(Math.max(end,90),180);
+    const third = Math.min(Math.max(end,180),270);
+    const fourth = Math.min(Math.max(end,270),360);
+
+    const stops = [
+        `#4caf50 0deg`,
+        `#4caf50 ${first}deg`
+    ];
+
+    if(end > 90){
+        stops.push(`#ffc107 90deg`, `#ffc107 ${second}deg`);
+    }
+
+    if(end > 180){
+        stops.push(`#ff9800 180deg`, `#ff9800 ${third}deg`);
+    }
+
+    if(end > 270){
+        stops.push(`#f44336 270deg`, `#f44336 ${fourth}deg`);
+    }
+
+    stops.push(`#e8edf5 ${end}deg`, `#e8edf5 360deg`);
+
+    gauge.style.background = `conic-gradient(from -90deg, ${stops.join(", ")})`;
+
+    if(feriValue){
+        feriValue.textContent = feri.toFixed(2);
+    }
+
+    if(riskStatus){
+        riskStatus.textContent = getRisk(feri);
+    }
+}
+
+
+function update(){
+
+    const zoneIndex =
+        Number(
+            document.getElementById("zoneSelect").value
+        );
+
+    const data = getData(zoneIndex).map((value,index)=>
+        clamp(value * (0.88 + zoneIndex * 0.035))
+    );
+    const feri = calculateFERI(data);
+    const disease = calculateDiseaseRisk(data);
+
+    document.getElementById("overallFERI").textContent = feri.toFixed(2);
+    document.getElementById("overallRisk").textContent = getRisk(feri);
+    document.getElementById("feriValue").textContent = feri.toFixed(2);
+    document.getElementById("riskStatus").textContent = getRisk(feri);
+
+    setFeriGauge(feri);
+
+    document.getElementById("waterValue").textContent = Math.round(disease.water * 100) + "%";
+    document.getElementById("respValue").textContent = Math.round(disease.respiratory * 100) + "%";
+    document.getElementById("vectorValue").textContent = Math.round(disease.vector * 100) + "%";
+
+    const diseaseOverall = Math.max(disease.water, disease.respiratory, disease.vector);
+    const diseaseCategory = getRisk(diseaseOverall);
+    const diseaseCategoryEl = document.getElementById("dominantRisk");
+
+    if(diseaseCategoryEl){
+        const dominantDisease = Object.entries({
+            "Water / Food": disease.water,
+            "Respiratory": disease.respiratory,
+            "Vector / Environment": disease.vector
+        }).sort((a,b)=>b[1]-a[1])[0][0];
+
+        diseaseCategoryEl.textContent = dominantDisease + " — " + diseaseCategory;
+    }
+
+    setTimeout(()=>{
+        document.getElementById("waterBar").style.width = disease.water * 100 + "%";
+        document.getElementById("respBar").style.width = disease.respiratory * 100 + "%";
+        document.getElementById("vectorBar").style.width = disease.vector * 100 + "%";
+    },100);
+
+    const selectedZoneIndex = Number(document.getElementById("zoneSelect").value);
+    const selectedScale = 0.88 + selectedZoneIndex * 0.035;
+
+    const zoneResults = zones.map((zone,index)=>{
+
+        const zoneData = getData(index).map(value =>
+            clamp(value * selectedScale)
+        );
+        const score = calculateFERI(zoneData);
+
+        // Keep the original multiplier as the base value,
+        // but adjust it with the currently selected zone so
+        // the Zone Risk Ranking responds whenever the zone changes.
+        const multiplierScale = selectedScale / 0.88;
+        const dynamicMultiplier = zone.multiplier * multiplierScale;
+
+        return {
+            name:zone.name,
+            multiplier:dynamicMultiplier,
+            score:score
+        };
+
+    }).sort((a,b)=>b.score-a.score);
+
+    document.getElementById("zoneTable").innerHTML =
+        zoneResults.map((item,index)=>`
+            <tr>
+                <td>${index+1}</td>
+                <td><strong>${item.name}</strong></td>
+                <td>${item.multiplier.toFixed(2)}</td>
+                <td><strong>${item.score.toFixed(2)}</strong></td>
+                <td>
+                    <span class="badge ${riskClass(item.score)}">
+                        ${getRisk(item.score)}
+                    </span>
+                </td>
+            </tr>
+        `).join("");
+
+    document.getElementById("highestZone").textContent = zoneResults[0].name;
+    document.getElementById("highestZoneValue").textContent = zoneResults[0].score.toFixed(2) + " FERI";
+    document.getElementById("highZones").textContent = zoneResults.filter(item=>item.score >= .50).length;
+
+    const riskValues = {
+        "Water / Food":disease.water,
+        "Respiratory":disease.respiratory,
+        "Vector / Environment":disease.vector
+    };
+
+    const dominant = Object.entries(riskValues)
+        .sort((a,b)=>b[1]-a[1])[0][0];
+
+    document.getElementById("dominantRisk").textContent = dominant + " — " + getRisk(Math.max(disease.water,disease.respiratory,disease.vector));
+
+    
+    const percentages = getContributionPercentages(zoneIndex);
+
+    const parameterData = parameters.map((parameter,index)=>({
+        ...parameter,
+        contributionPercent:percentages[index],
+        membership:data[index]
+    })).sort((a,b)=>b.contributionPercent-a.contributionPercent);
+
+    document.getElementById("parameters").innerHTML =
+        parameterData.slice(0,8).map(parameter=>`
+            <div class="parameter">
+                <div class="parameter-top">
+                    <div>
+                        <div class="parameter-name">
+                            ${parameter.id} — ${parameter.name}
+                        </div>
+                        <div style="color:#7a8799;font-size:11px;margin-top:4px;">
+                            Weight: ${parameter.weight.toFixed(2)}
+                            &nbsp; • &nbsp;
+                            μ: ${parameter.membership.toFixed(2)}
+                        </div>
+                    </div>
+                    <div class="parameter-value">
+                        <input class="contribution-input"
+                               type="number" min="0" max="100" step="0.1"
+                               value="${parameter.contributionPercent.toFixed(1)}"
+                               onchange="setContributionFromTopParameter('${parameter.id}', this.value)"
+                               title="Change contribution % for the selected zone">%
+                    </div>
+                </div>
+                <div class="parameter-bar">
+                    <div class="parameter-fill"
+                         style="width:${Math.min(parameter.contributionPercent,100)}%;">
+                    </div>
+                </div>
+            </div>
+        `).join("");
+
+    document.getElementById("matrixBody").innerHTML =
+        parameters.map((parameter,pIndex)=>`
+            <tr>
+                <td>${parameter.id} — ${parameter.name}</td>
+                ${zones.map((_,zIndex)=>{
+
+                    const selectedZoneIndex = Number(document.getElementById("zoneSelect").value);
+                    const baseValue = getData(zIndex)[pIndex];
+                    const selectedScale = 0.85 + (selectedZoneIndex + 1) * 0.035;
+                    const value = clamp(baseValue * selectedScale);
+                    const zonePercent = getContributionPercentages(zIndex)[pIndex];
+                    const opacity = .10 + value*.35;
+                    return `
+                        <td title="${parameter.id} contribution in ${zones[zIndex].name}: ${zonePercent.toFixed(1)}%">
+                            <span class="matrix-value"
+                                  style="background:rgba(50,120,220,${opacity});color:${value>.6 ? "#fff" : "#24507d"};">
+                                ${value.toFixed(2)}
+                            </span>
+                        </td>
+                    `;
+
+                }).join("")}
+            </tr>
+        `).join("");
+}
+
+
+function updateSimulationLabels(){
+
+    const ids = [
+        "E1",
+        "E4",
+        "E5",
+        "E6",
+        "E9",
+        "E10"
+    ];
+
+    ids.forEach(
+        id=>{
+
+            document.getElementById(
+                "sim"+id+"Val"
+            ).textContent =
+
+                document.getElementById(
+                    "sim"+id
+                ).value + "%";
+
+        }
+    );
+}
+
+function runSimulation(){
+
+    const values = {
+
+        E1:
+            Number(
+                document.getElementById(
+                    "simE1"
+                ).value
+            )/100,
+
+        E4:
+            Number(
+                document.getElementById(
+                    "simE4"
+                ).value
+            )/100,
+
+        E5:
+            Number(
+                document.getElementById(
+                    "simE5"
+                ).value
+            )/100,
+
+        E6:
+            Number(
+                document.getElementById(
+                    "simE6"
+                ).value
+            )/100,
+
+        E9:
+            Number(
+                document.getElementById(
+                    "simE9"
+                ).value
+            )/100,
+
+        E10:
+            Number(
+                document.getElementById(
+                    "simE10"
+                ).value
+            )/100
+
+    };
+
+
+    let simulatedFERI = 0;
+
+
+    parameters.forEach(
+        parameter=>{
+
+            let value =
+                parameter.base;
+
+            if(
+                values[
+                    parameter.id
+                ] !== undefined
+            ){
+
+                value =
+                    values[
+                        parameter.id
+                    ];
+
+            }
+
+            simulatedFERI +=
+                parameter.weight *
+                value;
+
+        }
+    );
+
+
+    simulatedFERI =
+        clamp(
+            simulatedFERI
+        );
+
+
+    /* Show the latest What-If result directly on the FERI meter. */
+    setFeriGauge(simulatedFERI);
+
+
+    const result =
+        document.getElementById(
+            "simResult"
+        );
+
+    result.style.display =
+        "block";
+
+    result.innerHTML = `
+
+        Simulated FERI:
+        <strong>
+            ${simulatedFERI.toFixed(2)}
+        </strong>
+
+        &nbsp; • &nbsp;
+
+        Risk Level:
+        <strong>
+            ${getRisk(simulatedFERI)}
+        </strong>
+
+    `;
+
+}
+
+[
+    "simE1",
+    "simE4",
+    "simE5",
+    "simE6",
+    "simE9",
+    "simE10"
+]
+.forEach(
+    id=>{
+
+        document.getElementById(
+            id
+        ).addEventListener(
+            "input",
+            updateSimulationLabels
+        );
+
+    }
+);
+
+document.getElementById(
+    "zoneSelect"
+)
+.addEventListener(
+    "change",
+    update
+);
+
+document.getElementById(
+    "eventSelect"
+)
+.addEventListener(
+    "change",
+    update
+);
+
+const cursorGlow =
+    document.getElementById(
+        "cursorGlow"
+    );
+
+document.addEventListener(
+    "mousemove",
+    event=>{
+
+        cursorGlow.style.left =
+            event.clientX + "px";
+
+        cursorGlow.style.top =
+            event.clientY + "px";
+
+    }
+);
+
+const particles =
+    document.getElementById(
+        "particles"
+    );
+
+for(
+    let i=0;
+    i<35;
+    i++
+){
+
+    const particle =
+        document.createElement(
+            "div"
+        );
+
+    particle.className =
+        "particle";
+
+    particle.style.left =
+        Math.random()*100 + "%";
+
+    particle.style.animationDuration =
+        (8 + Math.random()*15) + "s";
+
+    particle.style.animationDelay =
+        (-Math.random()*15) + "s";
+
+    particles.appendChild(
+        particle
+    );
+}
+
+document.querySelectorAll(
+    ".card,.section,.parameter,.action,.disease-box"
+)
+.forEach(
+    element=>{
+
+        element.addEventListener(
+            "mousemove",
+            event=>{
+
+                const rect =
+                    element.getBoundingClientRect();
+
+                const x =
+                    event.clientX -
+                    rect.left;
+
+                const y =
+                    event.clientY -
+                    rect.top;
+
+                const rotateY =
+                    ((x/rect.width)-.5)*2.5;
+
+                const rotateX =
+                    ((y/rect.height)-.5)*-2.5;
+
+                element.style.transform =
+                    `
+                    perspective(900px)
+                    rotateX(${rotateX}deg)
+                    rotateY(${rotateY}deg)
+                    translateY(-3px)
+                    `;
+
+            }
+        );
+
+
+        element.addEventListener(
+            "mouseleave",
+            ()=>{
+
+                element.style.transform =
+                    "";
+
+            }
+        );
+
+    }
+);
+
+const zoneMapData = [
+    {
+        id:"Z1",
+        name:"Ramkund",
+        lat:20.00754,
+        lng:73.79254,
+        note:"Ramkund representative point"
+    },
+    {
+        id:"Z2",
+        name:"Godavari Riverfront",
+        lat:20.00590,
+        lng:73.78990,
+        note:"Godavari riverfront representative point"
+    },
+    {
+        id:"Z3",
+        name:"Panchavati",
+        lat:20.00736,
+        lng:73.79299,
+        note:"Panchavati representative point"
+    },
+    {
+        id:"Z4",
+        name:"Main Pilgrim Route",
+        lat:20.01120,
+        lng:73.79620,
+        note:"Representative planning point"
+    },
+    {
+        id:"Z5",
+        name:"Accommodation / Camp Area",
+        lat:20.01490,
+        lng:73.78480,
+        note:"Representative planning point"
+    },
+    {
+        id:"Z6",
+        name:"Food / Market Area",
+        lat:20.00120,
+        lng:73.78206,
+        note:"Central market / bus-stand area representative point"
+    },
+    {
+        id:"Z7",
+        name:"Transport Hub",
+        lat:19.94720,
+        lng:73.84210,
+        note:"Nashik Road railway station"
+    },
+    {
+        id:"Z8",
+        name:"Healthcare Zone",
+        lat:19.99692,
+        lng:73.77819,
+        note:"Civil Hospital Nashik representative point"
+    }
+];
+
+let zoneMap = null;
+const zoneMarkers = [];
+let activeMapZone = 0;
+
+function makeZoneIcon(index, active=false){
+    return L.divIcon({
+        className:"",
+        html:`<div class="zone-marker ${active ? "active" : ""}">${index+1}</div>`,
+        iconSize:[34,34],
+        iconAnchor:[17,17],
+        popupAnchor:[0,-19]
+    });
+}
+
+function activateMapZone(index, fly=true){
+    if(!zoneMap || !zoneMapData[index]) return;
+
+    activeMapZone = index;
+
+    zoneMarkers.forEach((marker,i)=>{
+        marker.setIcon(makeZoneIcon(i,i===index));
+    });
+
+    document.querySelectorAll(".zone-legend-item")
+        .forEach((item,i)=>{
+            item.classList.toggle("active",i===index);
+        });
+
+    const point = zoneMapData[index];
+
+    if(fly){
+        zoneMap.flyTo(
+            [point.lat,point.lng],
+            15,
+            {
+                animate:true,
+                duration:.75
+            }
+        );
+    }
+
+    zoneMarkers[index].openPopup();
+
+    const zoneSelect = document.getElementById("zoneSelect");
+    if(zoneSelect && Number(zoneSelect.value)!==index){
+        zoneSelect.value = String(index);
+        update();
+    }
+}
+
+function buildZoneMap(){
+
+    if(typeof L === "undefined"){
+        const mapBox = document.getElementById("zoneMap");
+        if(mapBox){
+            mapBox.innerHTML =
+                "<div style='padding:20px;color:#68758c;font-size:13px;'>Interactive map could not load. Please open the file with an internet connection.</div>";
+        }
+        return;
+    }
+
+    zoneMap = L.map("zoneMap",{
+        zoomControl:true,
+        scrollWheelZoom:true
+    }).setView(
+        [20.0035,73.7905],
+        13
+    );
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            maxZoom:19,
+            attribution:"© OpenStreetMap contributors"
+        }
+    ).addTo(zoneMap);
+
+    zoneMapData.forEach((point,index)=>{
+
+        const marker =
+            L.marker(
+                [point.lat,point.lng],
+                {
+                    icon:makeZoneIcon(index,index===0),
+                    title:`${point.id} — ${point.name}`
+                }
+            ).addTo(zoneMap);
+
+        marker.bindPopup(`
+            <div class="zone-popup-title">
+                ${point.id} — ${point.name}
+            </div>
+            <div class="zone-popup-text">
+                ${point.note}
+            </div>
+        `);
+
+        marker.on("click",()=>{
+            activateMapZone(index,true);
+        });
+
+        zoneMarkers.push(marker);
+
+    });
+
+    const bounds =
+        L.latLngBounds(
+            zoneMapData.map(
+                point=>[point.lat,point.lng]
+            )
+        );
+
+    zoneMap.fitBounds(
+        bounds,
+        {
+            padding:[25,25],
+            maxZoom:14
+        }
+    );
+
+    const legend =
+        document.getElementById("zoneLegend");
+
+    legend.innerHTML =
+        zoneMapData.map(
+            (point,index)=>`
+                <button
+                    type="button"
+                    class="zone-legend-item ${index===0 ? "active" : ""}"
+                    data-zone-index="${index}"
+                    title="Move map to ${point.name}"
+                >
+                    <span class="zone-legend-dot">
+                        ${index+1}
+                    </span>
+                    <span class="zone-legend-name">
+                        ${point.id} — ${point.name}
+                    </span>
+                </button>
+            `
+        ).join("");
+
+    legend.querySelectorAll(".zone-legend-item")
+        .forEach(button=>{
+            button.addEventListener(
+                "click",
+                ()=>{
+                    activateMapZone(
+                        Number(button.dataset.zoneIndex),
+                        true
+                    );
+                }
+            );
+        });
+
+    setTimeout(()=>{
+        zoneMap.invalidateSize();
+    },300);
+}
+
+document.getElementById("zoneSelect")
+.addEventListener(
+    "change",
+    ()=>{
+        const index =
+            Number(
+                document.getElementById("zoneSelect").value
+            );
+
+        
+        update();
+        activateMapZone(index,true);
+    }
+);
+
+const leafletScript =
+    document.createElement("script");
+
+leafletScript.src =
+    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+
+leafletScript.integrity =
+    "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=";
+
+leafletScript.crossOrigin = "";
+
+leafletScript.onload =
+    buildZoneMap;
+
+leafletScript.onerror =
+    ()=>{
+        const mapBox =
+            document.getElementById("zoneMap");
+
+        if(mapBox){
+            mapBox.innerHTML =
+                "<div style='padding:20px;color:#68758c;font-size:13px;'>Map service could not load. Please check the internet connection.</div>";
+        }
+    };
+
+document.head.appendChild(leafletScript);
+
+update();
+
+updateSimulationLabels();
+
+</script>
+</body>
+</html>
